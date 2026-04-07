@@ -20,9 +20,9 @@ function Dashboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/sensors")
+    axios.get("http://smart-agriculture-backend-g0d9.onrender.com/api/sensors")
       .then(res => {
-        console.log("DATA:", res.data); // 🔍 debug
+        console.log("API DATA:", res.data); // 🔍 debug
         setData(res.data);
         setLoading(false);
       })

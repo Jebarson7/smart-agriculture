@@ -14,7 +14,7 @@ function Weather() {
         const { latitude, longitude } = position.coords;
 
         axios.get(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=YOUR_API_KEY&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=9200c573287e59b3be6d3684bf763f3a&units=metric`
         )
         .then(res => {
           setWeather(res.data);
