@@ -7,7 +7,7 @@ function Irrigation() {
   const [message, setMessage] = useState("");
 
   const startIrrigation = () => {
-    axios.post("http://smart-agriculture-backend-g0d9.onrender.com/api/irrigation", {
+    axios.post("https://smart-agriculture-backend-g0d9.onrender.com/api/irrigation", {
       status: "ON"
     })
     .then(() => setMessage("✅ Irrigation Started"))
@@ -15,7 +15,7 @@ function Irrigation() {
   };
 
   const stopIrrigation = () => {
-    axios.post("http://smart-agriculture-backend-g0d9.onrender.com/api/irrigation", {
+    axios.post("https://smart-agriculture-backend-g0d9.onrender.com/api/irrigation", {
       status: "OFF"
     })
     .then(() => setMessage("🛑 Irrigation Stopped"))
